@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 
 # INET4031
 # Kongcheng Vang
@@ -44,7 +44,7 @@ def main():
         #print cmd will print what cmd equals such as the fields of what gecos contains and the username
 	#os.system(cmd) executes the command stored in cmd using the operating systems command line
         #print cmd
-        #os.system(cmd)
+        os.system(cmd)
 
         #This prompts the user that their password is being created 
         print("==> Setting the password for %s..." % (username))
@@ -54,7 +54,7 @@ def main():
         #print cmd will print what cmd and that is the password and username
 	#os.system(cmd) executes the command stored in cmd using the operating systems command line
         #print cmd
-        #os.system(cmd)
+        os.system(cmd)
 
         for group in groups:
 	    #This if statement is looking for if the users group is assigned to a group. If the users group is assigned and not - (empty), it will run through the if statement.
@@ -63,7 +63,7 @@ def main():
                 print("==> Assigning %s to the %s group..." % (username,group))
                 cmd = "/usr/sbin/adduser %s %s" % (username,group)
                 #print cmd
-                #os.system(cmd)
+                os.system(cmd)
 
 if __name__ == '__main__':
     main()

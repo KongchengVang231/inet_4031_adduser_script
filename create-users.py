@@ -18,7 +18,7 @@ def main():
 	#Looking for a line that starts with # and it will equal the variable match
         match = re.match("^#",line)
 
-        #This splits a line by : and acts as a seperator
+        #This splits a line by : and acts as a seperator for each line
         fields = line.strip().split(':')
  
         #This replicates user entry data to create a user, and has to not equal 5 fields
@@ -57,8 +57,8 @@ def main():
         os.system(cmd)
 
         for group in groups:
-	    #This if statement is looking for if the users group is assigned to a group. If the users group is assigned and not - (empty), it will run through the if statement.
-	    #If the user is not assinged a group, they then will be assigned a group
+	    #This if statement is looking for if the users group is assigned to a group. If the users group is assigned and not - (empty), it will run through the if statement assigning the user to the group they inputted.
+	    #If the user is not assinged a group, they then will be assigned no group.
             if group != '-':
                 print("==> Assigning %s to the %s group..." % (username,group))
                 cmd = "/usr/sbin/adduser %s %s" % (username,group)

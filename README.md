@@ -1,16 +1,16 @@
 # inet_4031_adduser_script
 # This is an automation user management program
 
-#Program Description
+# Program Description
 
 
-#Program User Operation
+# Program User Operation
 
 
-#Input File Format
+# Input File Format
 
 
-#Command execution
+# Command execution
 
 
-#Dry Run
+# Dry Run

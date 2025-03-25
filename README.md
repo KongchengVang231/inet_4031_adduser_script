@@ -17,3 +17,4 @@ or
 sudo python3 create-users.py < create-users.input
 
 # Dry Run
+If you do a dry run, this will not add any users to the actual system. Dry run acts as a tester and does not affect the actual system.

@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 
 # INET4031
 # Kongcheng Vang
@@ -18,7 +18,7 @@ def main():
 	#Looking for a line that starts with # and it will equal the variable match
         match = re.match("^#",line)
 
-        #This splits a line by : and acts as a seperator
+        #This splits a line by : and acts as a seperator for each line
         fields = line.strip().split(':')
  
         #This replicates user entry data to create a user, and has to not equal 5 fields
